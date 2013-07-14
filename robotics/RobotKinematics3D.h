@@ -120,6 +120,7 @@ public:
   ///from q1 to q2 (in a linear interpolation).  Uses algorithm 2.
   Real SphereDistanceBound(const Vector3& ci,Real r,int i,const Config& q1,const Config& q2);
 
+  std::string name;
   std::vector<RobotLink3D> links;
   Config q;           ///< current configuration
   Vector qMin,qMax;   ///< joint limits
